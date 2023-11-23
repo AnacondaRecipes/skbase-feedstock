@@ -17,9 +17,9 @@ requirements:
     - python
     - setuptools
     - wheel
-    - toml
-    - build
     - pip
+    - toml 0.10.2
+    - build 0.10.0
   run:
     - python
 
