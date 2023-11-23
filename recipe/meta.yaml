@@ -1,5 +1,5 @@
 {% set name = "skbase" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,10 @@ package:
 
 source:
   url: https://github.com/sktime/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6035abd254fe7da82afb1b038e78dcc056f4fd62ac5d98a7a8c708c85a21b857
-
+  sha256: 085a97b1a5acb649a836b88ee5c30c8b9a8258baaee86c6ac73d366c2bae480f
 build:
-  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
   number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
