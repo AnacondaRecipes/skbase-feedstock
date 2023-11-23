@@ -24,12 +24,19 @@ requirements:
     - python
 
 test:
+  source_files:
+    - skbase/tests
   imports:
     - skbase
   commands:
     - pip check
+    - pytest skbase/tests
   requires:
     - pip
+    - pytest
+    - numpy
+    - scipy
+    - pandas
 
 about:
   home: https://github.com/sktime/skbase
