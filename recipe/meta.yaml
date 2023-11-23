@@ -1,4 +1,4 @@
-{% set name = "sktime" %}
+{% set name = "skbase" %}
 {% set version = "0.6.1" %}
 
 package:
